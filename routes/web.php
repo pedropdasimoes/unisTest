@@ -14,12 +14,11 @@ use App\Http\Controllers\Controller;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/regioes', function(){
+
+Route::get('/', function(){
     return view('regioes');
 });
 
 Route::post('busca', [Controller::class, 'busca'])->name('regioes.busca');
+
